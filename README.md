@@ -40,12 +40,15 @@ Member.all.select(:first_name, :email).to_sql
 Export a csv from a controller. 
 
 ```ruby
-def export
-  respond_to do |format|
-    format.csv do
-      streaming_csv_export MembersExport.new
+class MembersController < ApplicationController
+  def export
+    respond_to do |format|
+      format.csv do
+        streaming_csv_export MembersExport.new
+      end
     end
   end
+end
 ```
 
 ## Copyright
