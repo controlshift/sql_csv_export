@@ -1,8 +1,8 @@
-= sql_csv_export
+# sql_csv_export
 
 A gem for fast, efficient, streaming CSV exports of large datasets from your rails app. 
 
-== Usage
+## Usage
 
 Include in application helper to allow for streaming csv downloads. 
 
@@ -48,7 +48,7 @@ def export
   end
 ```
 
-== Copyright
+## Copyright
 
 Copyright (c) 2013 ControlShift Ltd. See LICENSE.txt for
 further details.
